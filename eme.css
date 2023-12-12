@@ -1,0 +1,359 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: 'Goldman-Sans-Black';
+    src:url('Goldman-Sans-Black.ttf.woff') format('woff'),
+        url('Goldman-Sans-Black.ttf.svg#Goldman-Sans-Black') format('svg'),
+        url('Goldman-Sans-Black.ttf.eot'),
+        url('Goldman-Sans-Black.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: 'Goldman-Sans-Black', sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+  }
+
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  /* HEADER */
+
+  .header .header__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header .header__wrapper .santa__news {
+    margin: 3rem;
+    height: 5.25rem;
+  }
+
+  /* BODY */
+
+  body {
+    background-color: #1d2455;
+    background-image: url(./img/bgc2.png);
+  }
+
+  .christmas__news .christmas__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .christmas__banner {
+    max-width: 60rem;
+    margin: none;
+    display: block;
+    border-radius: 2.5rem 2.5rem 0 0;
+  }
+
+  .bottom__decor {
+    max-width: 60rem;
+    margin: none;
+    display: block;
+  }
+
+  .christmas__news {
+    display: flex;
+    justify-content: center;
+  }
+
+  .christmas__news .main__info {
+    background-color: #c0e4fc;
+    max-width: 60rem;
+    display: inline-block;
+    text-align: center;
+    height: fit-content;
+  }
+
+  .christmas__news .main__info .heading, .heading__smaller {
+    color: var(--red__text);
+    font-weight: 600;
+  }
+
+  .christmas__news .main__info .heading {
+    font-size: 3.5rem;
+    line-height: 1;
+    padding: 3.5rem 0;
+  }
+
+  .christmas__news .main__info .heading__smaller {
+    font-size: 2.7rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .christmas__news .main__info p {
+    font-size: 1.55rem;
+    font-family: Arial;
+    line-height: 1.6;
+    padding: 0 5rem;
+  }
+
+  .christmas__news .main__info .learn__more {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    padding: 1.1rem 3rem;
+    background-color: var(--red__text);
+    border-radius: 2.2rem 0 2.2rem 0;
+    margin: 2.5rem 0 5rem 0;
+  }
+
+  .christmas__news .main__info .news__cells {
+    display: flex;
+  }
+
+  .christmas__news .main__info .news__table {
+    margin: 1rem;
+  }
+
+  .christmas__news .main__info .news__table .news__card {
+    padding: 0 1rem;
+  }
+
+  .news__card .news__cell {
+    color: var(--bluegreen__text);
+    font-size: 1.8rem;
+    font-weight: 450;
+    margin: 1rem;
+    max-width: 40rem;
+    line-height: 1;
+    height: fit-content;
+  }
+
+  .news__card img {
+    border-radius: 1rem;
+  }
+
+  .news__card a {
+    display: inline-flex;
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 2rem 1rem;
+  }
+
+  .news__card a .learn__more__text {
+    display: flex;
+    text-decoration: underline;
+  }
+
+  .news__table .news__cells .news__card {
+    text-align: left;
+    margin: none;
+    padding: none;
+    max-width: 40rem;
+  }
+
+/* FOOTER */
+.footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+}
+
+.footer .footer__container .footer__wrapper .links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer .footer__container .footer__wrapper .links li .white__border {
+  display: flex;
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer__container .footer__wrapper .end__message {
+  margin: 3rem;
+}
+
+.footer .footer__container .footer__wrapper .end__message p {
+    color: white;
+    font-family: 'Arial';
+    font-size: 1.23rem;
+}
+
+.footer .footer__container .footer__wrapper .end__message a {
+    color: var(--red__text);
+    text-decoration: underline;
+    font-size: 1.23rem;
+}
+
+.footer .footer__container .footer__wrapper .stripo__link .stripo__img{
+  width: 12.5rem;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 600px) { 
+  
+  .christmas__news .christmas__container .christmas__banner, .main__info {
+    display: block;
+    width: 100%;
+    background-color: var(--dark__blue);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .christmas__news {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .christmas__news {
+    align-items: center;
+   }
+
+   .christmas__container .bottom__decor {
+    width: 100%;
+   }
+
+   .christmas__news .main__info p {
+    padding: 0 2rem;
+   }
+   
+   .christmas__news .main__info .news__table {
+    padding: 2rem;
+   }
+
+   .news__table .news__cells .news__card {
+    text-align: left;
+    margin: none;
+    padding: none;
+    max-width: 100%;
+  }
+
+   .christmas__news .main__info .news__table .news__cells {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .christmas__news .main__info .news__table .news__cells .news__card {
+    padding: none;
+   }
+}
+
+/* REPEATABLE PATTERNS */
+:root {
+    --red__text: #ff544c;
+    --dark__blue: #1d2455;
+    --bluegreen__text: #1a9086;
+}
